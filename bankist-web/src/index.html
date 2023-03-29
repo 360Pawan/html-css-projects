@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Bankist, When banking meets minimalist. A simpler banking experience for a simpler life."
+    />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <title>Bankist | When Banking meets Minimalist</title>
+  </head>
+  <body class="preload">
+    <!-- Header -->
+    <header class="header container" id="home">
+      <nav class="nav">
+        <a href="#home" class="nav__link">
+          <figure class="nav__logo">
+            <img
+              src="img/logo.png"
+              alt="Bankist logo"
+              id="logo"
+              data-version-number="3.0"
+            />
+          </figure>
+        </a>
+        <ul class="nav__links js-nav-links">
+          <li class="nav__item">
+            <a class="nav__link" href="#features"> Features </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#operations"> Operations </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#testimonials"> Testimonials </a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="https://bankist-app-by-pawanjs.netlify.app/"
+              target="_blank"
+              rel="noopener"
+              rel="noreferrer"
+            >
+              Login
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#modal">
+              Open account
+            </a>
+          </li>
+        </ul>
+        <!-- Mobile Navigation Icon -->
+        <div class="nav--icon-box js-menu-btn">
+          <div class="nav--icon nav--icon-top"></div>
+          <div class="nav--icon nav--icon-center"></div>
+          <div class="nav--icon nav--icon-bottom"></div>
+        </div>
+      </nav>
+      <div class="header__title">
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          meets<br />
+          <span class="highlight">minimalist</span>
+        </h1>
+        <p class="header__text">
+          A simpler banking experience for a simpler life.
+        </p>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <picture class="header__img">
+          <source type="image/webp" srcset="./img/hero.webp" />
+          <img src="img/hero.jpg" alt="Minimalist bank items" />
+        </picture>
+      </div>
+    </header>
+
+    <!-- features -->
+    <section class="section" id="features">
+      <div class="section__title">
+        <p class="section__description">Features</p>
+        <h2 class="section__header">
+          Everything you need in a modern bank and more.
+        </h2>
+      </div>
+      <div class="features container">
+        <picture>
+          <source
+            type="image/webp"
+            loading="lazy"
+            srcset="./img/digital.webp"
+          />
+          <img src="img/digital.jpg" loading="lazy" alt="Computer" />
+        </picture>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h3 class="features__header">100% digital bank</h3>
+          <p>
+            Account opening made easy. Just fill some basic information and your
+            account is up and running. Get all the benefits of digital banking
+            at home. Sending money was not that easy before.
+          </p>
+        </div>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h3 class="features__header">Watch your money grow</h3>
+          <p>
+            Defeat inflation with our jaw-dropping interest of 8.5%. Our
+            efficient teams take care of your precious money and grow it at a
+            rapid pace. You sow a seed we make it a tree.
+          </p>
+        </div>
+        <picture>
+          <source type="image/webp" loading="lazy" srcset="./img/grow.webp" />
+          <img src="img/grow.jpg" loading="lazy" alt="Plant" />
+        </picture>
+        <picture>
+          <source type="image/webp" loading="lazy" srcset="./img/card.webp" />
+          <img src="img/card.jpg" loading="lazy" alt="Credit card" />
+        </picture>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h3 class="features__header">Free debit card included</h3>
+          <p>
+            Get all the benefits of a debit card at no extra cost. Our cards are
+            accepted everywhere. Use it for shopping or watching your favorite
+            movie we make that all possible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="operations">
+      <div class="section__title">
+        <p class="section__description">Operations</p>
+        <h2 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h2>
+      </div>
+
+      <div class="operations container">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h3 class="operations__header">
+            Transfer money to anyone, instantly! No fees, no BS.
+          </h3>
+          <p>
+            Transfer money to anyone or everywhere. All the transactions are
+            given much priority and they are fulfilled immediately with no extra
+            cost for all these. We work 24 hour so that your money will
+            immediately sent to your loved once.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h3 class="operations__header">
+            Buy a home or make your dreams come true, with instant loans.
+          </h3>
+          <p>
+            We take care of your dreams. You want to buy a house or a car, we
+            have something for our every customer. Our instants loans makes your
+            dream come true. Just some basic formalities and you have the key of
+            your new house in your hand.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h3 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h3>
+          <p>
+            If you ever feel disappointed with our services be free to tell us
+            or close your account instantly. We never hold your private data. If
+            you wish to delete we take care of your privacy and decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TTestimonials -->
+    <section class="section" id="testimonials">
+      <div class="section__title section__title--testimonials">
+        <p class="section__description">Not sure yet?</p>
+        <h2 class="section__header">
+          Millions of Bankists are already making their life simpler.
+        </h2>
+      </div>
+
+      <div class="slider container">
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial__header">Best financial decision ever!</h3>
+            <blockquote class="testimonial__text">
+              The best decision of my life was opening a account with bankist.
+              Their service and support is awesome. All the queries are resolved
+              instantly. Their interest rate is quite higher then competition.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="img/user-1.jpg"
+                alt="Aarav Lynn"
+                loading="lazy"
+                class="testimonial__photo"
+              />
+              <h4 class="testimonial__name">Aarav Lynn</h4>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+        <!-- Carousal -->
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial__header">
+              The last step to becoming a complete minimalist
+            </h3>
+            <blockquote class="testimonial__text">
+              I love minimalism a lot. The bankist is the last step which helped
+              in becoming a complete minimalist. No clutter and useless stuff.
+              Straight to the point every time.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="img/user-2.jpg"
+                loading="lazy"
+                alt="Miyah Miles"
+                class="testimonial__photo"
+              />
+              <h4 class="testimonial__name">Miyah Miles</h4>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial__header">
+              Finally free from old-school banks
+            </h3>
+            <blockquote class="testimonial__text">
+              My search for a modern bank ended here. It's time to say goodbye
+              to old school banks and say hello to this awesome bank built for
+              the modern world.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="img/user-3.jpg"
+                loading="lazy"
+                alt="Francisco Gomes"
+                class="testimonial__photo"
+              />
+              <h4 class="testimonial__name">Francisco Gomes</h4>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h2 class="section__header">
+          The best day to join Bankist was one year ago. The second best is
+          today!
+        </h2>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__nav container">
+        <li class="footer__item">
+          <a class="footer__link" href="#"> About </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Pricing </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Terms of Use </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Privacy Policy </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Careers </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Blog </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"> Contact Us </a>
+        </li>
+      </ul>
+      <figure class="footer__logo">
+        <img src="img/icon.png" loading="lazy" alt="Logo" />
+      </figure>
+      <p class="footer__copyright">
+        A Project by
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://www.pawanjs.com/"
+          rel="noopener"
+          rel="noreferrer"
+        >
+          Pawan JS
+        </a>
+      </p>
+    </footer>
+
+    <div class="modal hidden" id="modal">
+      <button class="btn--close-modal js-btn-close-modal">&times;</button>
+      <p class="modal__header">
+        Open your bank account in just<br />
+        <span class="highlight">5 minutes</span>
+      </p>
+      <form class="modal__form">
+        <div class="modal__box">
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+        <div class="modal__box">
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+        <div class="modal__box">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
